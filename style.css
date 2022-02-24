@@ -1,0 +1,93 @@
+body{
+    text-decoration: none;
+    outline: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #000;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+li a {
+     display: block;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: #eaeaea solid 1px;
+
+  }
+  
+li a.active {
+    background-color: #58257b;
+    font-weight: bold;
+    color: white;
+  }
+  
+li a:hover:not(.active) {
+    background-color: #5C5C5C;
+    font-weight: bold;
+    color: white;
+  }
+
+.container .item-1{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.container .item-2{
+    background-color: #EFEFEF;
+    margin-top: 20px;
+
+}
+
+.container .content{
+    padding: 20px
+}
+
+.container .content p{
+    padding-right: 100px;
+    padding-left: 100px;
+    
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 10px;
+    text-align: left;
+}
+
+.grid-item{
+    padding: 20px;
+}
+
+.grid-item h1{
+    font-size:20px;
+}
+
+.flex-item img{
+    width: 128px;
+    height: 128px;
+    padding-right: 10px;
+}
+
+.flex-item{
+    display: flex;
+}
